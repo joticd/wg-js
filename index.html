@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My List</title>
+  <link rel="stylesheet" href="/src/css/style.css">
+  <script type="module" src="/src/main.ts" defer></script>
+</head>
+
+<body>
+  <div id="app" class="app">
+    <div class="widgetComponent">
+      <h1>Select items</h1>
+      <p>You currently have 3 selected items.</p>
+      <div class="flex fwrap dialogComponent-selected--container" id="elementsSelected">
+      </div>
+      <button class="btnGreen btn mt-1" id="btnAccordian">Change my choice</button>
+      <div class="grid dialogComponent-accordian grid-row-0" id="dialogAccordian">
+        <div>
+          <div class="dialogComponent">
+            <div class="flex justify-between dialogComponent-header">
+              <h4 class="m-0">Selected items</h4><span class="pointer">X</span>
+            </div>
+            <div class="flex justify-between">
+              <div>
+                <label class="mr-05">Search</label>
+                <input type="text" id="elementSearch">
+              </div>
+              <div class="flex">
+                <label class="mr-05">Filter</label>
+                <select id="selectFilter">
+                  <option value="0">No filter</option>
+                  <option value="10">&gt; 10</option>
+                  <option value="100">&gt; 100</option>
+                  <option value="200">&gt; 200</option>
+                </select>
+              </div>
+            </div>
+            <div class="dialogComponent-list" id="dialogComponentList">
+            </div>
+            <div class="dialogComponent-selected">
+              <p>Current selected items:</p>
+              <div class="flex fwrap dialogComponent-selected--container" id="elementsTempSelected"> 
+              </div>
+            </div>
+            <div class="flex fwrap gap-1 mt-1">
+              <button class="btn btnGreen" id="btnSave">Save</button>
+              <button class="btn btnRed" id="btnCancel">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

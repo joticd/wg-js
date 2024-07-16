@@ -1,0 +1,127 @@
+body {
+  background-color: #e5e5e5;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+}
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  padding: 0.5rem 1.2rem;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+
+}
+
+.btnGreen {
+  background-color: #519f03;
+}
+
+.btnRed {
+  background-color: #9f2903;
+}
+
+.widgetComponent {
+  background-color: #fff;
+  padding: 1.25rem;
+  width: 70%;
+}
+
+.dialogComponent {
+  background-color: #373737;
+  color: #fff;
+  padding: 1rem;  
+  margin-top: 2rem;
+  
+}
+
+.dialogComponent-header {
+  margin-bottom: 1rem;
+}
+
+.dialogComponent-list {
+  height: 17rem;
+  overflow-y: scroll;
+  background-color: #000;
+  margin: 1rem 0;
+}
+
+.dialogComponent-element {
+  margin: 0.5rem;
+}
+
+.element {
+  background-color: #000;
+  padding: 0.5rem 0.75rem;
+  line-height: 1;
+  min-width: 8rem;
+  color: #fff;
+}
+
+.dialogComponent-selected--container {
+  gap: 0.75rem;
+}
+
+
+.element-divider {
+  border-left: 1px solid #fff;
+  padding-left: 0.75rem;
+}
+
+.dialogComponent-accordian {
+  transition: grid-template-rows 500ms;
+}
+
+.dialogComponent-accordian > div {
+  overflow: hidden;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-row-0 {
+  grid-template-rows: 0fr;
+}
+
+.grid-row-1 {
+  grid-template-rows: 1fr;
+}
+
+.flex {
+  display: flex;
+}
+
+.fwrap {
+  flex-wrap: wrap;
+}
+
+.justify-between {
+  justify-content: space-between; 
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.gap-1 {
+  gap: 1rem
+}
+
+
+.m-0 {
+  margin: 0;
+}
+
+.mr-05 {
+  margin-right: 0.5rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
