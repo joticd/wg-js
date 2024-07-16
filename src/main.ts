@@ -1,5 +1,5 @@
 import DialogElement from "./dialog-element";
-import  SelectedElement from "./selected-element";
+import SelectedElement from "./selected-element";
 import { selectedItems, tempSelectedItems } from "./stores/stores";
 
 
@@ -14,7 +14,7 @@ const btnSave = document.querySelector("#btnSave") as HTMLElement;
 const btnCancel = document.querySelector("#btnCancel") as HTMLElement;
 const dialogAccordian = document.querySelector("#dialogAccordian") as HTMLElement;
 const btnAccordian = document.querySelector("#btnAccordian") as HTMLElement;
-
+const selectednumber = document.querySelector("#selectednumber") as HTMLElement;
 
 elementSearch.addEventListener("input", filterElements);
 selectFilter.addEventListener("change", filterElements);
@@ -69,7 +69,8 @@ function showTempSelection () {
 
 function showSelection () {
   const items = selectedItems.get();
-  elementsSelected.innerHTML = "";  
+  elementsSelected.innerHTML = ""; 
+  selectednumber.innerHTML = `${items.length}`;
   for(let i = 0; i < items.length; i++) {
     const newElement = new SelectedElement(items[i], false);
     elementsSelected.appendChild(newElement);
